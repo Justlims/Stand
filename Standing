@@ -1,0 +1,48 @@
+local UserInputService = game:GetService("UserInputService")
+
+UserInputService.InputBegan:Connect(function(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.Z then
+        local args = {
+            [1] = "z", 
+            [2] = "All"
+        }
+        game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(unpack(args))
+    elseif inputObject.KeyCode == Enum.KeyCode.X then
+        local args = {
+            [1] = "x",
+            [2] = "All"
+        }
+        game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(unpack(args))
+    elseif inputObject.KeyCode == Enum.KeyCode.C then
+        local args = {
+            [1] = "c",
+            [2] = "All"
+        }
+        game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(unpack(args))
+    elseif inputObject.KeyCode == Enum.KeyCode.V then
+        local args = {
+            [1] = "v",
+            [2] = "All"
+        }
+        game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(unpack(args))
+    elseif inputObject.KeyCode == Enum.KeyCode.E then
+        local args = {
+            [1] = "e",
+            [2] = "All"
+        }
+        game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(unpack(args))
+    elseif inputObject.KeyCode == Enum.KeyCode.R then
+        local args = {
+            [1] = "r",
+            [2] = "All"
+        }
+        game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(unpack(args))
+    elseif inputObject.KeyCode == Enum.KeyCode.P then
+        local args = {
+            [1] = "!pose",
+            [2] = "All"
+        }
+        game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(unpack(args))
+
+    end
+end)
